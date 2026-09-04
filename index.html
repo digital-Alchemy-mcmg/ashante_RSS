@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashante MVP — Live Telemetry</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="topbar">
+<div class="topbar-title">
+<h1>Ashante MVP — Live Telemetry</h1>
+<div class="topbar-meta">
+<span id="mirror-status" class="pill unknown">MIRROR: —</span>
+<span id="feed-generated">Generated: —</span>
+<span id="source-modified">Source modified: —</span>
+</div>
+</div>
+<div class="topbar-actions">
+<button id="refresh-btn">Refresh</button>
+<span id="last-rendered">Last rendered: —</span>
+<span id="stale-banner" class="stale-banner hidden">STALE — showing last successful data</span>
+</div>
+</header>
+
+<main id="app">
+<section id="error-banner" class="error-banner hidden">STATE_UNAVAILABLE — feed could not be loaded</section>
+
+<section class="summary" id="summary-section">
+<h2>Summary</h2>
+<div class="summary-grid" id="summary-grid"></div>
+</section>
+
+<section class="tasks" id="tasks-section">
+<h2>Tasks</h2>
+<div class="table-wrap">
+<table id="tasks-table">
+<thead>
+<tr>
+<th>Task ID</th>
+<th>Label / Job</th>
+<th>Lane</th>
+<th>State</th>
+<th>Dependencies</th>
+<th>Builder</th>
+<th>Verification</th>
+<th>Retry</th>
+<th>Next Action</th>
+</tr>
+</thead>
+<tbody id="tasks-body"></tbody>
+</table>
+</div>
+</section>
+
+<section class="workers" id="workers-section">
+<h2>Workers</h2>
+<div class="table-wrap">
+<table id="workers-table">
+<thead>
+<tr>
+<th>Worker ID</th>
+<th>Label</th>
+<th>Status</th>
+<th>Current Task</th>
+<th>Claim State</th>
+<th>Last Update</th>
+</tr>
+</thead>
+<tbody id="workers-body"></tbody>
+</table>
+</div>
+</section>
+
+<section class="health" id="health-section">
+<h2>Health</h2>
+<div class="health-grid" id="health-grid"></div>
+</section>
+
+<section class="events" id="events-section">
+<h2>Recent Events</h2>
+<ul id="events-list"></ul>
+</section>
+</main>
+
+<script src="./app.js"></script>
+</body>
+</html>
