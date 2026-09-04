@@ -1,0 +1,33 @@
+{
+  "schema_version":"1.0.0",
+  "generated_at":"2026-09-04T11:24:06Z",
+  "tasks":[
+    {"task_id":"A01","lane":"Repo/Foundation","state":"BUILT_WAITING_VERIFICATION","priority":"P0"},
+    {"task_id":"A02","lane":"Repo/Foundation","state":"PASS","priority":"P0"},
+    {"task_id":"A03","lane":"Data Spine","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"A04","lane":"Data Spine","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"A05","lane":"Fixtures","state":"REWORK","priority":"P1"},
+    {"task_id":"A06","lane":"Fixtures","state":"READY","priority":"P1"},
+    {"task_id":"B01","lane":"Desktop Shortlist","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"B02","lane":"Desktop Shortlist","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"C01","lane":"Property Envelope","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"C02","lane":"Property Envelope","state":"PASS","priority":"P1"},
+    {"task_id":"C03","lane":"Property Envelope","state":"WAIT_DEP","priority":"P1"},
+    {"task_id":"D01","lane":"Export","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"D02","lane":"Export","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"D03","lane":"Export","state":"READY","priority":"P1"},
+    {"task_id":"E01","lane":"Mobile","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"E02","lane":"Mobile","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"F01","lane":"Persistence","state":"WAIT_DEP","priority":"P1"},
+    {"task_id":"F02","lane":"Persistence","state":"WAIT_DEP","priority":"P1"},
+    {"task_id":"G01","lane":"Second Property","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"G02","lane":"Second Property","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"H01","lane":"Deployment","state":"WAIT_DEP","priority":"P1"},
+    {"task_id":"H02","lane":"Deployment","state":"WAIT_DEP","priority":"P1"},
+    {"task_id":"I01","lane":"Docs/Ops","state":"READY","priority":"P2"},
+    {"task_id":"I02","lane":"Docs/Ops","state":"PASS","priority":"P2"},
+    {"task_id":"J01","lane":"Final Acceptance","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"J02","lane":"Final Acceptance","state":"WAIT_DEP","priority":"P0"},
+    {"task_id":"J03","lane":"Release","state":"WAIT_DEP","priority":"P0"}
+  ]
+}
