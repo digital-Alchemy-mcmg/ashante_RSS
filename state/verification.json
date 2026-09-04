@@ -1,0 +1,33 @@
+{
+  "schema_version":"1.0.0",
+  "generated_at":"2026-09-04T11:24:06Z",
+  "verification":[
+    {"task_id":"A01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"A02","state":"PASS","retry_count":0,"claim_state":"VERIFIED_PASS","claimed_by":"Gemini Spark"},
+    {"task_id":"A03","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"A04","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"A05","state":"FAIL","retry_count":1,"claim_state":"COMPLETED","claimed_by":"Gemini Spark"},
+    {"task_id":"A06","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"B01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"B02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"C01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"C02","state":"PASS","retry_count":0,"claim_state":"COMPLETED","claimed_by":"Gemini Spark"},
+    {"task_id":"C03","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"D01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"D02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"D03","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"E01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"E02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"F01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"F02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"G01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"G02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"H01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"H02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"I01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"I02","state":"PASS","retry_count":0,"claim_state":"COMPLETED","claimed_by":"Gemini Spark"},
+    {"task_id":"J01","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"J02","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null},
+    {"task_id":"J03","state":"NOT_RUN","retry_count":0,"claim_state":"UNCLAIMED","claimed_by":null}
+  ]
+}
