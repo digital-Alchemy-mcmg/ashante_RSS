@@ -1,0 +1,11 @@
+{
+  "schema_version":"1.0.0",
+  "generated_at":"2026-09-04T11:24:06Z",
+  "workers":[
+    {"worker_id":"GPT-WORK-USER","label":"GPT Work — User","role":"builder","status":"IDLE_OR_UNCLAIMED","current_task":null},
+    {"worker_id":"GPT-WORK-ASHANTE","label":"GPT Work — Ashante","role":"builder","status":"IDLE_OR_UNCLAIMED","current_task":null},
+    {"worker_id":"CHEAP-SECONDARY","label":"Cheap/Secondary Agent","role":"builder","status":"IDLE_OR_UNCLAIMED","current_task":null},
+    {"worker_id":"ANTI-GRAVITY","label":"Anti-Gravity","role":"builder_verifier","status":"IDLE_OR_UNCLAIMED","current_task":null},
+    {"worker_id":"GEMINI-SPARK","label":"Gemini Spark","role":"independent_verifier","status":"IDLE_OR_UNCLAIMED","current_task":null}
+  ]
+}
