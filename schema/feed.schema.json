@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/digital-Alchemy-mcmg/ashante_RSS/main/schema/feed.schema.json",
+  "title": "Ashante RSS Telemetry Feed",
+  "type": "object",
+  "required": ["schema_version","project","authority","mirror","generated_at","source_modified_at","mirror_status","state_vocabulary","tasks","workers","health"],
+  "properties": {
+    "schema_version": {"const":"1.0.0"},
+    "project": {"const":"Ashante MVP"},
+    "authority": {"const":"google-control-plane"},
+    "mirror": {"const":"github-public-telemetry"},
+    "generated_at": {"type":"string","format":"date-time"},
+    "source_modified_at": {"type":"string","format":"date-time"},
+    "mirror_status": {"enum":["CURRENT","STALE","STATE_UNAVAILABLE"]},
+    "state_vocabulary": {"type":"array","items":{"enum":["NOT_STARTED","READY","ACTIVE","BUILT_WAITING_VERIFICATION","PASS","REWORK","BLOCKED","WAIT_DEP","STATE_UNAVAILABLE"]}},
+    "tasks": {"type":"array","items":{"$ref":"#/$defs/task"}},
+    "workers": {"type":"array","items":{"$ref":"#/$defs/worker"}},
+    "health": {"type":"object"},
+    "recent_events": {"type":"array","items":{"type":"object"}}
+  },
+  "$defs": {
+    "task": {
+      "type":"object",
+      "required":["task_id","label","lane","priority","state","build_state","verification_state","dependencies","builder","verifier","retry_count","claimed_by","next_action"],
+      "properties": {
+        "task_id":{"type":"string"},
+        "label":{"type":"string"},
+        "lane":{"type":"string"},
+        "priority":{"type":"string"},
+        "state":{"enum":["NOT_STARTED","READY","ACTIVE","BUILT_WAITING_VERIFICATION","PASS","REWORK","BLOCKED","WAIT_DEP","STATE_UNAVAILABLE"]},
+        "build_state":{"type":["string","null"]},
+        "verification_state":{"type":["string","null"]},
+        "dependencies":{"type":"array","items":{"type":"string"}},
+        "builder":{"type":["string","null"]},
+        "verifier":{"type":["string","null"]},
+        "retry_count":{"type":"integer","minimum":0},
+        "claimed_by":{"type":["string","null"]},
+        "next_action":{"type":["string","null"]}
+      },
+      "additionalProperties": true
+    },
+    "worker": {
+      "type":"object",
+      "required":["worker_id","label","role","status","current_task"],
+      "properties": {
+        "worker_id":{"type":"string"},
+        "label":{"type":"string"},
+        "role":{"type":"string"},
+        "status":{"type":"string"},
+        "current_task":{"type":["string","null"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
