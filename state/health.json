@@ -1,0 +1,15 @@
+{
+  "schema_version":"1.0.0",
+  "generated_at":"2026-09-04T11:24:06Z",
+  "source_modified_at":"2026-09-04T11:20:36.858Z",
+  "status":"CURRENT",
+  "fail_closed":true,
+  "task_count":27,
+  "pass_count":3,
+  "rework_count":1,
+  "built_waiting_verification_count":1,
+  "ready_count":3,
+  "wait_dep_count":19,
+  "active_count":0,
+  "blocked_count":0
+}
